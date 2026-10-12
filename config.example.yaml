@@ -1,0 +1,25 @@
+data:
+  path: 'data/your_data.xlsx'
+  date_col: "date"
+  open_col: "open"
+  high_col: "high"
+  low_col: "low"
+  close_col: "close"
+
+strategy:
+  entry_period: 20
+  exit_period: 10
+  atr_period: 10
+  atr_multiple: 2.0
+  risk_pct: 0.02
+  allow_short: false
+
+backtest:
+  initial_cash: 100000
+  fee_rate: 0.0001
+  slippage: 0.0002
+  lot_size: 100
+
+output:
+  save_dir: "outputs"
+  show_plot: true
